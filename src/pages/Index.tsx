@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Sparkles, Mushroom, Wallet, ArrowRight } from "lucide-react";
+import { Sparkles, Wallet, ArrowRight, Flower } from "lucide-react";
 
 const Index = () => {
   const { toast } = useToast();
@@ -21,7 +21,7 @@ const Index = () => {
       {/* Header */}
       <header className="container mx-auto py-6 px-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <Mushroom className="h-8 w-8 text-pink-300" />
+          <Flower className="h-8 w-8 text-pink-300" />
           <span className="text-2xl font-bold">Shroomiez NFT</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
@@ -61,7 +61,7 @@ const Index = () => {
           <div className="relative">
             <div className="absolute -inset-1 bg-pink-500 rounded-full opacity-75 blur-xl animate-pulse"></div>
             <div className="relative bg-purple-800 rounded-full p-4 w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
-              <Mushroom className="w-40 h-40 md:w-48 md:h-48 text-pink-300" />
+              <Flower className="w-40 h-40 md:w-48 md:h-48 text-pink-300" />
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ const Index = () => {
           <Card className="bg-purple-800/50 border-purple-600">
             <CardContent className="p-6 text-center">
               <div className="mx-auto mb-4 bg-pink-500/20 p-3 rounded-full w-16 h-16 flex items-center justify-center">
-                <Mushroom className="h-8 w-8 text-pink-300" />
+                <Flower className="h-8 w-8 text-pink-300" />
               </div>
               <h3 className="text-xl font-bold mb-2">Future Roadmap</h3>
               <p className="text-purple-200">An exciting journey with upcoming releases and collaborations</p>
@@ -127,7 +127,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <Mushroom className="h-6 w-6 text-pink-300" />
+              <Flower className="h-6 w-6 text-pink-300" />
               <span className="text-xl font-bold">Shroomiez NFT</span>
             </div>
             <div className="text-sm text-purple-300">
