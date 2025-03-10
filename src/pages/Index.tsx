@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Sparkles, Wallet, ArrowRight, Flower } from "lucide-react";
+import { Wallet, ArrowRight } from "lucide-react";
 
 const Index = () => {
   const { toast } = useToast();
@@ -63,14 +63,12 @@ const Index = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <div className="relative">
-            <div className="absolute -inset-1 bg-pink-500 rounded-full opacity-75 blur-xl animate-pulse"></div>
-            <div className="relative bg-purple-800 rounded-full p-4 w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/fd7dcf9c-b1fb-447b-98cf-899d1b93a68a.png" 
-                alt="Shroomiez Mushroom" 
-                className="w-40 h-40 md:w-48 md:h-48"
-              />
-            </div>
+            <img 
+              src="/lovable-uploads/fd7dcf9c-b1fb-447b-98cf-899d1b93a68a.png" 
+              alt="Shroomiez Mushroom" 
+              className="w-40 h-40 md:w-48 md:h-48 z-10 relative drop-shadow-[0_0_30px_rgba(168,85,247,0.8)]"
+            />
+            <div className="absolute inset-0 -z-10 bg-purple-500/30 blur-3xl rounded-full w-full h-full"></div>
           </div>
         </div>
       </section>
@@ -86,7 +84,7 @@ const Index = () => {
           <Card className="bg-purple-800/50 border-purple-600">
             <CardContent className="p-6 text-center">
               <div className="mx-auto mb-4 bg-pink-500/20 p-3 rounded-full w-16 h-16 flex items-center justify-center">
-                <Sparkles className="h-8 w-8 text-pink-300" />
+                <Wallet className="h-8 w-8 text-pink-300" />
               </div>
               <h3 className="text-xl font-bold mb-2">Unique Artwork</h3>
               <p className="text-purple-200">Each Shroomiez is hand-crafted with unique traits and properties</p>
@@ -109,7 +107,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/fd7dcf9c-b1fb-447b-98cf-899d1b93a68a.png" 
                   alt="Shroomiez Mushroom" 
-                  className="h-8 w-8"
+                  className="h-8 w-8 drop-shadow-[0_0_10px_rgba(168,85,247,0.6)]"
                 />
               </div>
               <h3 className="text-xl font-bold mb-2">Future Roadmap</h3>
@@ -142,7 +140,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/fd7dcf9c-b1fb-447b-98cf-899d1b93a68a.png" 
                 alt="Shroomiez Mushroom" 
-                className="h-6 w-6"
+                className="h-6 w-6 drop-shadow-[0_0_10px_rgba(168,85,247,0.6)]" 
               />
               <span className="text-xl font-bold">Shroomiez NFT</span>
             </div>
