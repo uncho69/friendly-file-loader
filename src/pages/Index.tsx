@@ -43,7 +43,7 @@ const Index = () => {
         <div className="md:w-1/2 mb-10 md:mb-0">
           <Badge className="mb-4 bg-pink-500">Coming Soon</Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Discover Rare <span className="text-pink-300">Shroomiez</span> NFT Collection
+            <span className="text-pink-300">Shroomiez</span>
           </h1>
           <p className="text-lg mb-8 text-purple-200">
             Join our magical mushroom universe with unique digital collectibles. Each Shroomiez NFT is one-of-a-kind with special properties and traits.
